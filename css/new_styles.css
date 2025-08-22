@@ -85,6 +85,7 @@ section {
 .header-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
@@ -140,7 +141,7 @@ section {
 }
 
 .header-nav-ul,
-.adress-ul-list {
+.header-address {
   display: none;
 }
 
@@ -186,12 +187,11 @@ section {
   position: relative;
 }
 
-.header-address {
-  font-style: normal;
-  margin-left: auto;
-}
-
 @media screen and (min-width: 768px) {
+  .header-address {
+    display: block;
+    font-style: normal;
+  }
   .adress-ul-list {
     display: flex;
     flex-direction: column;
